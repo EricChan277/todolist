@@ -1,18 +1,23 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import style from "./styles";
-import TodoItem from "./TodoItem"
+import TodoItem from "./TodoItem";
+import PropTypes from "prop-types";
 
-class TodoList extends Component {
-    render() {
-      return  (
+
+const TodoList = props => (
         <ul style={style.todolist}>
-          {this.props.value.map((item, i)=>{
-            return <TodoItem key={i} item={item}/>
+          {props.todos.map((item)=>{
+            return <TodoItem key={item.id} item={item}
+             toggleComplete = {props.toggleComplete}
+             trashItem={props.trashItem}/>
           })}        
         </ul>
-      )
-    }
-  }
+)
+
+TodoList.propTypes = {
+  todos:PropTypes.array.isRequired,
+  toggleComplete:PropTypes.func.isRequired,
+  trashItem:PropTypes.func.isRequired
+}
 
 export default TodoList;

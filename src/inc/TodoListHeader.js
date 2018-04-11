@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { defaultProps } from "prop-types";
-import ReactDOM from "react-dom";
 import style from "./styles";
+import PropTypes from "prop-types";
 
 class TodoListHeader extends Component {
     render() {
@@ -12,6 +11,10 @@ class TodoListHeader extends Component {
 
 TodoListHeader.defaultProps = {
     title: "So much to do!"
+}
+
+TodoListHeader.propTypes = {
+  title:PropTypes.string.isRequired
 }
 
 export default TodoListHeader;

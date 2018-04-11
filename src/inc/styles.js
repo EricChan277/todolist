@@ -1,13 +1,8 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
 export default {
-    display:"flex",
-    flexDirection:"column",
-    justifyContent:"center",
-    alignItems:"center",
-    backgroundColor:"black",
+
+    backgroundColor:"white",
     fontSize: "2rem",
+    padding: "10px",
     header: {
       display:"flex",
       justifyContent:"center",
@@ -15,14 +10,14 @@ export default {
       flexDirection:"column",
       backgroundColor:"#91a8d7",
       color:"white",
-      width:"95%",
+      width:"100%",
       marginTop:"10px",
     },
     newitem: {
       display:"flex",
       justifyContent:"space-around",
       backgroundColor: "#c2c2c2",
-      width: "95%",
+      width: "100%",
       fontSize: "1rem",
     },
     greytext: {
@@ -33,7 +28,7 @@ export default {
       backgroundColor: "white",
       flexDirection:"column",
       listStyle:"none",
-      width: "95%",
+      width: "100%",
       margin:"0",
       padding: "0",
     },
@@ -54,7 +49,7 @@ export default {
       justifyContent:"space-between",
       alignItems:"center",
       backgroundColor:"white",
-      width: "91.3%",
+      width: "100%",
       padding: "10px",
       marginBottom: "10px",
       borderRadius: "0 0 10px 10px",
